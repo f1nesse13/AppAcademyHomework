@@ -8,6 +8,7 @@ class Queue
 
   def enqueue(el)
     @queue.push(el)
+    el
   end
   
   def dequeue

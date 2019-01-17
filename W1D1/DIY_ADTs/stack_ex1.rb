@@ -7,6 +7,7 @@ class Stack
 
   def push(el)
     @stack.push(el)
+    el
   end
 
   def pop

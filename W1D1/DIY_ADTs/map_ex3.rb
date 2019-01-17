@@ -1,6 +1,6 @@
 class Map
   attr_accessor :map
-  
+
   def initialize
     @map = Array.new
   end
@@ -9,7 +9,7 @@ class Map
     @map.each do |pair|
       if pair.first == key
         pair[1] = val
-        return pair
+        return pair.last
       end
     end
     @map << [key, val]
@@ -24,7 +24,7 @@ class Map
 
   def delete(key)
     @map.each do |pair|
-      @map.delete(pair) if pair.first == key 
+      return @map.delete(pair).last if pair.first == key 
     end
     @map
   end
