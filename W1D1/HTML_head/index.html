@@ -1,0 +1,103 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+  <meta description="Recipe for delicious stuffed shells that are easy to prepare and cook">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./assets/styles.css">
+  <script src="./assets/script.js"></script>
+  <title>App Academy Recipe Page</title>
+
+  <!-- Google Analytics -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+</head>
+<header>
+  <img src="https://www.coursereport.com/schools/app-academy" alt="app academy logo">
+  <nav>
+    <ul>
+      <li><a href="#description">Description</a></li>
+      <li><a href="#ingredients">Ingredients</a></li>
+      <li><a href="#directions">Directions</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+  <section>
+    <aside>
+      <h2 id="ingredients">Ingredients</h2>
+      <ul>
+        <li>1 (16 ounce) package jumbo pasta shells</li>
+        <li>4 cups large curd cottage cheese</li>
+        <li>12 ounces mozzarella cheese, shredded</li>
+        <li>1/2 cup grated Parmesan cheese</li>
+        <li>2 eggs, lightly beaten</li>
+        <li>1 pinch garlic powder</li>
+        <li>1 teaspoon dried oregano</li>
+        <li>1 teaspoon dried parsley</li>
+        <li>1 (26 ounce) jar spaghetti sauce</li>
+        <li>1/4 cup grated Parmesan cheese</li>
+      </ul>
+    </aside>
+    <h1>Stuffed Shells</h1>
+    <figure>
+      <img src="https://images.media-allrecipes.com/userphotos/560x315/1010034.jpg" alt="stuffed shells covered in sauce and cheese">
+      <figcaption><a href="https://www.allrecipes.com/recipe/11836/stuffed-shells-i/?internalSource=recipe%20hub&referringId=723&referringContentType=Recipe%20Hub&clickId=cardslot%2059">Link
+        to All Recipes page</a></figcaption>
+      </figure>
+    <h2 id="description">Description</h2>
+    <p>Jumbo macaroni shells stuffed with cheese mixture, covered with sauce, and baked.</p>
+    <h2 id="directions">Directions</h2>
+    <ol>
+      <li>Cook shells according to package directions. Place in cold water to stop cooking. Drain.</li>
+      <li>Mix together cottage cheese, mozzarella cheese, 1/2 cup Parmesan cheese, eggs, and garlic powder. Rub the
+        dried herbs in the palms of your hands to pulverize them, and stir into the cheese mixture. Stuff mixture into
+        the shells.</li>
+      <li>Spread 1/3 of spaghetti sauce in the bottom of a 15 x 10 inch pan. Place shells open side up, and close
+        together in pan. Spread remaining sauce over top, and sprinkle with remaining 1/4 cup Parmesan cheese.</li>
+      <li>Bake at 350 degrees F (175 degrees C) for 25 to 35 minutes, or until bubbly. Let stand 10 minutes before
+        serving.</li>
+    </ol>
+  </section>
+  <section id="reviews">
+    <form id="review-form" action="./" method="get">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required>
+      <label for="rating">Rating</label>
+        1<input type="radio" name="rating" id="rating" value="1" checked>
+        2<input type="radio" name="rating" id="rating" value="2">
+        3<input type="radio" name="rating" id="rating" value="3">
+        4<input type="radio" name="rating" id="rating" value="4">
+        5<input type="radio" name="rating" id="rating" value="5">
+      <label for="cooking">Cooking Expertise</label>
+      <select name="cooking" id="cooking">
+        <option value="0" selected disabled>Select Cooking Expertise</option>
+        <option value="Sometimes Cook">Sometimes Cook</option>
+        <option value="Cook Everyday">Cook Everyday</option>
+        <option value="Cooking is a Hobby">Cooking is a Hobby</option>
+        <option value="Professional Chef">Professional Chef</option>
+      </select>
+      <label>Review
+        <textarea name="review" id="review" cols="30" rows="10"></textarea>
+      </label>
+      <input type="submit" value="Submit Review">
+    </form>
+  </section>
+  <footer>
+    <p>Recipe by: <a href="https://www.allrecipes.com/recipe/11836/stuffed-shells-i/?internalSource=recipe%20hub&referringId=723&referringContentType=Recipe%20Hub&clickId=cardslot%2059">SALLYJUN</a></p>
+  </footer>
+</body>
+
+</html>
+
+<!-- Recipe taken from allrecipes posted by SALLYJUN link to site : https://www.allrecipes.com/recipe/11836/stuffed-shells-i/?internalSource=recipe%20hub&referringId=723&referringContentType=Recipe%20Hub&clickId=cardslot%2059 -->
