@@ -30,12 +30,14 @@ def clever_octopus(arr) #O(n)
   long
 end
 
-p sluggish_octopus(example_array)
-p dominant_octopus(example_array).last
-p clever_octopus(example_array)
-
 tiles_array = ["up", "right-up", "right", "right-down", "down", "left-down", "left",  "left-up" ]
 
-def slow_dance(arr)
-  
+def slow_dance(direction, arr) # O(n)
+  arr.each_with_index do |tile, i|
+    return i if tile == direction
+  end
+end
+
+def fast_dance(direction, arr) # O(1)
+  return arr.index(direction)
 end
