@@ -3,7 +3,7 @@ require 'lru_cache'
 
 describe LRUCache do
   subject(:cache) { LRUCache.new(3) }
-  
+
   describe '#initialize' do
     it 'initializes with a empty array' do
       expect(cache.cache).to eq([])
@@ -36,6 +36,6 @@ describe LRUCache do
       expect(cache.count).to_not eq(0)
     end
   end
-  
+
 
 end
