@@ -1,6 +1,6 @@
 class House < ApplicationRecord
   has_many :gardeners,
-    class_name: 'Gardener',
+    class_name: "Gardener",
     foreign_key: :house_id,
     primary_key: :id
 
@@ -19,6 +19,11 @@ class House < ApplicationRecord
   end
 
   def better_seeds_query
-    # TODO: your code here
+    plants = self.plants.includes(:seeds)
+    seeds = []
+    plants.each do |plant|
+      seeds << plant.seeds
+    end
+    seeds
   end
 end
