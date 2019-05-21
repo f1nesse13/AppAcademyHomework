@@ -1,0 +1,234 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ html {
+   background: linear-gradient(crimson 45%, #000 105%);
+   font: 300 16px 'Lato', sans-serif;
+   min-height: 100%;
+ }
+
+ * {
+   list-style: none;
+   text-decoration: none;
+   outline: none;
+ }
+
+ ul {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ ul h2 {
+  margin-top: 3rem;
+ }
+
+ ul p {
+   margin-top: 0;
+   margin-bottom: 6rem;
+ }
+
+table {
+   text-align: center;
+   border-spacing: 2.3rem;
+ }
+
+ .track_lyrics {
+   margin: 2.5rem auto;
+ }
+
+ .track_lyrics h2 {
+   margin-bottom: 4rem;
+ }
+
+ .error_box {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+ }
+
+ .error_box li {
+   font: 300 1.8em 'Lato';
+   color: #faff00;
+   text-shadow: 2px 3px 0px #000;
+ }
+
+a {
+  color: #fff;
+  text-shadow: 2px 3px 0 #000;
+  font-size: 2.4rem;
+}
+
+ul {
+  padding: 0;
+  margin-bottom: 3rem;
+}
+
+.album_page_table th, .track_page_table th, .track_lyrics h2 {
+  font: 300 3.7rem 'Lato';
+}
+
+.album_page_table p {
+  margin: .5rem 0;
+}
+
+h2 {
+  font: 5.5rem 'Akronim';
+  margin: 1.8rem 1rem;
+}
+
+.band_album_list th {
+   font: 5.5rem 'Akronim';
+}
+
+.band_album_list td {
+  padding: 1.1rem 4rem;
+  padding-top: 2rem; 
+ }
+
+header h1 {
+  margin: 2rem;
+  font: 300 8rem 'Akronim', cursive;  
+  text-align: center;
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2rem;
+  align-content: center
+}
+header p {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.track_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.track_form div {
+  display: flex;
+  margin: 3rem 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.track_form div label {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+select {
+  margin-top: 3rem;
+  padding: .8rem 1rem;
+  border: 2px solid #000;
+  font: 300 1.2rem 'Lato';
+}
+
+input {
+  margin: 1rem 2rem;
+  padding: .8rem 3rem;
+  border-style: outset;
+  border-color: crimson;
+  font: 300 1.2rem Lato;
+  box-shadow: 1px 1px 2px rgb(0,0,0);
+  box-shadow: 2px 5px 2px rgba(0,0,0,.5);
+  box-shadow: 4px 6px 1px rgba(0,0,0,.5);
+  background-color: #000;
+  color: #fff;
+  text-shadow: 1px 1px 1px crimson;
+  text-shadow: 2px 2px 1px crimson;
+}
+
+input:active {
+  box-shadow: 2px 2px 1px rgb(0,0,0);
+  text-shadow: 1px 1px 1px crimson;
+}
+
+.main_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+
+.main_content h1 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  font: 300 5rem 'Akronim', cursive;
+  text-align: center;
+}
+
+.main_content p {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.login_form {
+ display: flex;
+ flex-direction: column;
+}
+
+.login_form input {
+  margin-bottom: 1.5rem;
+  padding: .8rem 1.8rem;
+  font-size: 1.1rem;
+}
+
+.note {
+  padding: 2rem 5rem 1.5rem 5rem;
+  margin-bottom: 4rem;
+  border: outset 2px #000;
+  border-radius: 3%;
+  box-shadow: 5px 7px rgba(0,0,0,0.3);
+}
+
+.note_links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.note_links a {
+  margin-left: 1rem; 
+}
+.note_list p:last-of-type {
+    text-align: center;
+}
+.note_list a {
+  font-size: 1rem;
+}
+.note_form {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  margin-bottom: 5rem;
+}
+
+textarea {
+  width: 25rem;
+  height: 12rem;
+  font-size: 1.2rem;
+  border: 2px solid #000;
+  box-shadow: 3px 4px 0 rgba(0,0,0,0.5);
+}
+
+.page_links {
+  display: flex;
+  margin-top: 4rem;
+}
