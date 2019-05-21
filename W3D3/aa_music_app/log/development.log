@@ -23120,3 +23120,11 @@ Processing by TracksController#show as HTML
 Completed 200 OK in 99ms (Views: 54.1ms | ActiveRecord: 20.6ms)
 
 
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE DATABASE "aa_music_app_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (931.3ms)[0m  [1m[35mCREATE DATABASE "music_db_test" ENCODING = 'utf8'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE DATABASE "aa_music_app_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE DATABASE "music_db_test" ENCODING = 'utf8'[0m
+  ↳ bin/rails:9
