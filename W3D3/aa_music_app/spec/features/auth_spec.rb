@@ -1,7 +1,7 @@
 feature "the signup process" do
   scenario "has a new user page" do
     visit new_user_url
-    expect(page).to have_content "New user"
+    expect(page).to have_content "Sign Up!"
   end
 
   feature "signing up a user" do
@@ -9,19 +9,24 @@ feature "the signup process" do
       visit new_user_url
       fill_in "Email", :with => "testing@email.com"
       fill_in "Password", :with => "biscuits"
-      click_on "Sign Up"
+      click_on "Create Account"
     end
 
-    scenario "redirects to bands index page after signup"
+    scenario "redirects to bands index page after signup" do
+      expect(current_path).to eq("/bands")
+    end
   end
 
   feature "with an invalid user" do
     before(:each) do
       visit new_user_url
       fill_in "Email", :with => "testing@email.com"
-      click_on "Sign Up"
+      click_on "Create Account"
     end
 
-    scenario "re-renders the signup page after failed signup"
+    scenario "re-renders the signup page after failed signup" do
+      expect(current_path).to eq("/users")
+      expect(page).to have_content("Password is too short (minimum is 6 characters)")
+    end
   end
 end

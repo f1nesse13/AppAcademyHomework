@@ -1,5 +1,5 @@
 <% action_url = method == :login ? session_url : users_url %>
-<% submit_text = method == :login ? "Login" : "Sign Up" %>
+<% submit_text = method == :login ? "Login" : "Create Account" %>
 
 <form class='login_form' action="<%= action_url %>" method="post">
   <%= auth_token %>
