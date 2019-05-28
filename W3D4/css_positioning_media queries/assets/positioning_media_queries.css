@@ -1,39 +1,39 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #FEFFF1;
+    font-family: Arial, sans-serif;
+    background-color: #FEFFF1;
 }
 
 h1 {
-  font-size: 38px;
-  margin-bottom: 10px;
+    font-size: 38px;
+    margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 32px;
+    font-size: 32px;
 }
 
-ul li a, figcaption a {
-  text-decoration: none;
-  color: inherit;
+ul li a,
+figcaption a {
+    text-decoration: none;
+    color: inherit;
 }
 
-header > img {
-  width: 100px;
-  float: left;
+header>img {
+    width: 100px;
+    float: left;
 }
 
 .ingredients-list {
-
-  list-style: square inside;
+    list-style: square inside;
 }
 
 ol {
-  list-style: upper-roman inside;
+    list-style: upper-roman inside;
 }
 
 .user_review h4 {
-  font-size: 18px;
-  font-weight: bold;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 input[type="radio"] {
@@ -45,9 +45,8 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked {
-  background-position: 30px 30px;
+    background-position: 30px 30px;
 }
-
 
 input[type="submit"]:last-child {
     background: gold;
@@ -58,11 +57,11 @@ input:last-child:hover {
 }
 
 ol li:nth-of-type(2n) {
-  background-color: whitesmoke;
-  margin: 10px 0;
+    background-color: whitesmoke;
+    margin: 10px 0;
 }
 
-h2 + .user_review {
+h2+.user_review {
     border-top: 1px solid black;
 }
 
@@ -80,7 +79,7 @@ nav ul li a {
 }
 
 body {
-  margin: 0 auto;
+    margin: 0 auto;
     width: 60%;
 }
 
@@ -92,7 +91,8 @@ aside {
     margin: 15px 0px;
 }
 
-input[type="text"], select {
+input[type="text"],
+select {
     display: block;
     width: 175px;
 }
@@ -109,4 +109,3 @@ textarea {
 label {
     display: block;
 }
-
