@@ -2,17 +2,25 @@
 
 body {
   /* Write your css here... */
-
+  font: 400 16px sans-serif;
+  background-color: #eee;
 }
 
 .header {
-
+  border-bottom: 1px solid #eee;
+  background-color: #f00;
 }
 
 .header a {
-
+  display: block;
+  padding: 10px;
 }
 
 .header-nav {
-
+  width: 900px;
+  margin: auto;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  color: #fff;
+  font-weight: 700;
 }
