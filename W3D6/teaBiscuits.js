@@ -8,7 +8,7 @@ const reader = readline.createInterface({
 
 reader.question("Would you like tea?", function (tea) {
   reader.question("Would you like biscuits?", function (biscuits) {
-    console.log(`Tea? ${tea} Biscuits? ${biscuits}`)
+    console.log(`${tea} to tea and ${biscuits} to biscuits!`)
     reader.close();
   })
 });
