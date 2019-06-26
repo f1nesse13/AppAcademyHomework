@@ -30,4 +30,23 @@ document.addEventListener('DOMContentLoaded', () => {
   // adding new photos
 
   // --- your code here!
+  document.querySelector('.photo-show-button').addEventListener('click', e => {
+    e.preventDefault();
+    const photoContainer = document.querySelector('.photo-form-container');
+    photoContainer.style.display = photoContainer.style.display === 'block' ? 'none' : 'block';
+  });
+
+  const createImage = e => {
+    e.preventDefault();
+    const input = document.querySelector('.photo-url-input');
+    const src = input.value;
+    const img = document.createElement('img');
+    const li = document.createElement('li');
+    img.src = src;
+    li.appendChild(img);
+    document.querySelector('.dog-photos').appendChild(li);
+    input.value = '';
+  };
+
+  document.querySelector('.photo-url-submit').addEventListener('click', createImage);
 });
