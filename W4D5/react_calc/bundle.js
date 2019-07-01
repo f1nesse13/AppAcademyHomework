@@ -171,7 +171,71 @@ function (_React$Component) {
         type: "text",
         onChange: this.setNumber2.bind(this),
         value: this.state.num2
-      }));
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        type: "submit",
+        onClick: this.doCalculation.bind(this),
+        value: "+"
+      }, "+"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        type: "submit",
+        onClick: this.doCalculation.bind(this),
+        value: "-"
+      }, "-"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        type: "submit",
+        onClick: this.doCalculation.bind(this),
+        value: "*"
+      }, "*"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        type: "submit",
+        onClick: this.doCalculation.bind(this),
+        value: "/"
+      }, "/"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        type: "submit",
+        onClick: this.doCalculation.bind(this),
+        value: "reset"
+      }, "Clear"));
+    } // url(resource:///org/gnome/shell/theme/noise-texture.png)
+
+  }, {
+    key: "doCalculation",
+    value: function doCalculation(e) {
+      e.preventDefault();
+      var num1 = this.state.num1;
+      var num2 = this.state.num2;
+
+      if (num1 && num2) {
+        switch (e.target.value) {
+          case '+':
+            this.setState({
+              result: num1 + num2
+            });
+            break;
+
+          case '-':
+            this.setState({
+              result: num1 - num2
+            });
+            break;
+
+          case '*':
+            this.setState({
+              result: num1 * num2
+            });
+            break;
+
+          case '/':
+            this.setState({
+              result: num1 / num2
+            });
+            break;
+
+          case 'reset':
+            this.setState({
+              result: 0,
+              num1: '',
+              num2: ''
+            });
+            break;
+        }
+      }
     }
   }, {
     key: "setNumber1",
