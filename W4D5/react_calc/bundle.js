@@ -163,7 +163,37 @@ function (_React$Component) {
   _createClass(Calculator, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, this.state.result));
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, this.state.result), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "text",
+        onChange: this.setNumber1.bind(this),
+        value: this.state.num1
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "text",
+        onChange: this.setNumber2.bind(this),
+        value: this.state.num2
+      }));
+    }
+  }, {
+    key: "setNumber1",
+    value: function setNumber1(e) {
+      var value = parseInt(e.target.value);
+
+      if (value || e.target.value === '') {
+        this.setState({
+          num1: parseInt(value) || ''
+        });
+      }
+    }
+  }, {
+    key: "setNumber2",
+    value: function setNumber2(e) {
+      var value = parseInt(e.target.value);
+
+      if (value || e.target.value === '') {
+        this.setState({
+          num2: parseInt(value) || ''
+        });
+      }
     }
   }]);
 
