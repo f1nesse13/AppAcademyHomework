@@ -21,6 +21,8 @@ time, mark, audio, video {
   vertical-align: baseline;
 	background-color: transparent;
 	text-decoration: none;
+	outline: none;
+	border: none;
 	color: inherit;
 }
 /* HTML5 display-role reset for older browsers */
@@ -151,34 +153,6 @@ table {
 	color: #000;
 	background-color: #2fa0e2;
 	transition: all .2s linear;
-
-}
-
-.current_user {
-	position: absolute;
-	right: 0;
-	padding: 10px;
-	font: 300 1.2rem 'Quicksand';
-	color: #000;
-	z-index: 2;
-}
-
-.current_user_links {
-	display: flex;
-	justify-content: space-evenly;
-}
-
-.current_user p {
-	font: 300 1.3rem 'Quicksand';
-	margin-bottom: 10px;
-}
-
-.current_user a {
-	background-color: #000;
-	border-radius: 10px;
-	color: #2fa0e2;
-	border: 1px solid #2fa0e2;
-	padding: 3px 5px;
 }
 
 @media screen and (min-width: 600px) {
@@ -246,12 +220,80 @@ form {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 20px;
+	width: 500px;
+	margin: 50px auto;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #d3d3d3;
+	border: 1px solid #000;
 }
 
 form input {
+	border: 2px solid #555;
 	padding: 5px 10px;
-	font: 300 1.3rem 'Quicksand';
+	font: 700 1.7rem 'Quicksand';
+	color: #2fa0e2;
 	border-radius: 10px;
 	margin: 5px;
+	background-color: #000;
+}
+
+form label {
+	font: 700 1.7rem 'Quicksand';
+	color: #2fa0e2;
+}
+
+input[type='submit'] {
+	cursor: pointer;
+}
+
+input[type='text'] {
+	background-color: #fff;
+	color: #000;
+	font: 300 1.5rem 'Quicksand';
+}
+
+.list-pair {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	font: 300 1.5rem 'Quicksand';
+}
+
+.list-pair h3 {
+	font: 700 2rem 'Quicksand';
+}
+
+.list-pair div {
+	background-color: #d3d3d3;
+	color: #000;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 20px 120px;
+}
+
+.quotes {
+	display: flex;
+	justify-content: center;
+	font: 300 1.5rem 'Quicksand';
+	background-color: #d3d3d3;
+	color: #000;
+	padding: 10px;
+	border-radius: 10px;
+	width: 70%;
+	margin: 20px auto;
+}
+
+.quote-title {
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+.quotes .author {
+	color: #2fa0e2;
+	font-weight: 700;
+}
+
+.quotes ul li {
+	padding: 10px;
 }
