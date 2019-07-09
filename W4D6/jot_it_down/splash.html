@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Bad+Script|Quicksand:400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
-	<img src="splash.jpg">
-
-	JotItDown: The Note-taking app with the Best UX. Try it Today!
-
-	<a href="#">Sign Up</a>
-	<a href="#">Sign In</a>
-	<a href="#">Sign Out</a>
-
-	<p> current_user: tupac_shakur </p>
-	<a href="#">Edit Profile</a>
-
-	<a href="#">about us</a>
-	<a href="#">careers</a>
-	<a href="#">contact</a>
-	<a href="index.html">home</a>
+	<header class='header'>
+		<a href="index.html">
+			<h1 class="header_title">JotItDown</h1>
+		</a>
+		<nav class='nav'>
+			<ul class='header_nav'>
+				<li><a href="#">about us</a></li>
+				<li><a href="#">careers</a></li>
+				<li><a href="#">contact</a></li>
+				<li><a href="index.html">home</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="current_user">
+		<p> Current User: tupac_shakur </p>
+		<div class="current_user_links">
+			<a href="#">Edit Profile</a>
+			<a href="#">Sign Out</a>
+		</div>
+	</section>
+	<section class='hero'>
+		<img src="splash.jpg">
+		<h1 class='hero_title'><span>JotItDown</span> <span>The Note-taking app with the Best UX.Try it Today!</span></h1>
+		<a href="#">Sign Up</a>
+		<a href="#">Sign In</a>
+	</section>
 </body>
+
 </html>
-
-
-
