@@ -61,9 +61,18 @@ h3 {
 }
 
 .active {
+  font-weight: bold;
+  transform: translateX(20px)
 }
 
 a {
   display: block;
   margin-bottom: 10px;
+  text-decoration: none;
+  color: #21ca89;
+  font: 300 1.5rem 'Helvetica', sans-serif;
+}
+
+a:hover {
+  color: #12c6e6;
 }
